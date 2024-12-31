@@ -4,6 +4,5 @@ instance/*
 *.log
 htmlcov/*
 /junit*
-/venv
 uploads/*
-
+venv
