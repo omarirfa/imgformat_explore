@@ -1,5 +1,5 @@
 # Introduction
-This code compares how jpeg XL functions against other formats and what is the advantage of jpeg XL.
+This code serves as a general analysis of different image formats while exploring different capabilities.
 
 
 ## Upcoming changes
