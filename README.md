@@ -12,7 +12,6 @@ This is just a little tool for comparing different image formats. It analyzes JP
 
 ## How It Works 📊
 
-```mermaid
 %%{init: {
   'theme': 'base',
   'themeVariables': {
@@ -24,11 +23,10 @@ This is just a little tool for comparing different image formats. It analyzes JP
     'tertiaryColor': '#e0e7ff'
   }
 }}%%
+
 flowchart TD
     Input[/Input Image/]:::input --> Convert[Convert to Multiple Formats]
     Convert --> Analyze[Analyze Images]
-    Analyze -->|Quality Metrics| Report[Generate Report]:::output
-    Analyze -->|Visual Compare| Visualize[Create Visualizations]:::output
 
     subgraph Formats[Image Formats]
         direction LR
@@ -38,12 +36,32 @@ flowchart TD
         WebP:::format
     end
 
+    subgraph Metrics[Quality Metrics]
+        direction LR
+        PSNR[PSNR]:::metric
+        SSIM[SSIM]:::metric
+        Compression[Compression Ratio]:::metric
+        Speed[Loading Speed]:::metric
+    end
+
+    subgraph Visual[Visual Compare]
+        direction LR
+        SideBySide[Side by Side]:::visual
+        Diff[Difference Maps]:::visual
+        Zoom[Zoomed Region]:::visual
+        Stego[Stego Effects]:::visual
+    end
+
     Convert --> Formats
+    Analyze --> Metrics --> Report[Generate Report]:::output
+    Analyze --> Visual --> Visualize[Create Visualizations]:::output
+
     classDef default fill:#6366f1,stroke:#4f46e5,stroke-width:2px,color:#fff,rounded:true
     classDef input fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff,rounded:true
     classDef output fill:#ec4899,stroke:#db2777,stroke-width:2px,color:#fff,rounded:true
     classDef format fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
-```
+    classDef metric fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
+    classDef visual fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
 
 ## Getting Started 🚀
 
