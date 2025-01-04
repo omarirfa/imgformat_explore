@@ -31,8 +31,8 @@ repos:
         - --quiet
         - --format=custom
         - --configfile=bandit.yaml
-  - repo: https://github.com/dhruvmanila/remove-print-statements
-    rev: v0.5.2  # Replace with latest tag on GitHub
-    hooks:
-      - id: remove-print-statements
-        args: ['--verbose']   # Show all the print statements to be removed
+  # - repo: https://github.com/dhruvmanila/remove-print-statements
+  #   rev: v0.5.2  # Replace with latest tag on GitHub
+  #   hooks:
+  #     - id: remove-print-statements
+  #       args: ['--verbose']   # Show all the print statements to be removed
