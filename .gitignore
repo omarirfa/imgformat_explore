@@ -6,3 +6,8 @@ htmlcov/*
 /junit*
 uploads/*
 venv
+output_imgs
+img_comp.py
+new.py
+pil_test.py
+requirements2.txt
