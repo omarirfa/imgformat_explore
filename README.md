@@ -11,7 +11,7 @@ This is just a little tool for comparing different image formats. It analyzes JP
 - [x] Added setup file for easy installation
 
 ## How It Works 📊
-
+```mermaid
 %%{init: {
   'theme': 'base',
   'themeVariables': {
@@ -62,6 +62,7 @@ flowchart TD
     classDef format fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
     classDef metric fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
     classDef visual fill:#f0f9ff,stroke:#6366f1,stroke-width:2px,color:#6366f1,rounded:true
+```
 
 ## Getting Started 🚀
 
